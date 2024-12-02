@@ -31,9 +31,9 @@ This is a **dynamic and visually appealing Currency Converter application** that
    ```bash
    git clone https://github.com/bkanumur/Currency_Converter.git
    cd Currency_Converter
-
-	2.	Open the Project:
-	•	Open index.html in any modern web browser.
+2. **Open the project**:
+   ```bash
+   Open index.html in any modern browser.
 
 How to Use
 
