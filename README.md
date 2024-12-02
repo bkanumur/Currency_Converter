@@ -31,3 +31,44 @@ This is a **dynamic and visually appealing Currency Converter application** that
    ```bash
    git clone https://github.com/bkanumur/Currency_Converter.git
    cd Currency_Converter
+
+	2.	Open the Project:
+	•	Open index.html in any modern web browser.
+
+How to Use
+
+	1.	Select the base currency and target currency using the dropdown menus.
+	2.	Enter the amount in the first input box.
+	3.	The converted value will appear automatically in the second box.
+	4.	Use the Swap button to quickly interchange currencies.
+
+Project Structure
+
+currency-converter/
+│
+├── index.html        # Main HTML file
+├── style.css         # CSS for styling
+├── index.js          # JavaScript for dynamic functionality
+├── README.md         # Project documentation
+└── assets/           # Folder for storing images or additional resources (if any)
+
+Future Enhancements
+
+	•	Add historical data visualization for currency trends.
+	•	Allow users to select favorite currencies for quick access.
+	•	Integrate additional APIs for better accuracy and more features.
+
+Credits
+
+	•	API Source: Open Exchange Rates
+	•	Background Image: Pexels
+
+License
+
+This project is licensed under the MIT License.
+
+---
+
+### Key Notes:
+1. **Replace `https://images.pexels.com/photos/8254439/pexels-photo-8254439.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920`**:
+   - Upload a screenshot of your application to your repository or a hosting service like Imgur and replace the placeholder link.
