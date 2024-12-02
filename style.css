@@ -1,0 +1,124 @@
+body {
+    background: url('https://images.pexels.com/photos/8254439/pexels-photo-8254439.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1080&w=1920') 
+                no-repeat center center/cover !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay for text readability */
+    z-index: -1;
+}
+
+/* Additional container styling for better aesthetics */
+.container {
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency for frosted effect */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.container:hover {
+    transform: scale(1.03);
+}
+
+/* Title */
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+/* Currency container */
+.currency-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+/* Dropdowns and Inputs */
+.currency-select, .currency-input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+}
+
+.currency-select:hover, .currency-input:focus {
+    outline: none;
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 1);
+}
+
+/* Exchange rate text */
+.exchange-rate {
+    font-size: 18px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+    color: #ffeb3b;
+}
+
+/* Swap button */
+.swap-button {
+    background: linear-gradient(145deg, #f57c00, #fbc02d);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.swap-button:hover {
+    background: linear-gradient(145deg, #ef6c00, #f57c00);
+    transform: scale(1.1);
+}
+
+.swap-button:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        max-width: 95%;
+    }
+
+    .currency-box {
+        width: 48%;
+    }
+}
